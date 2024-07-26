@@ -6,7 +6,7 @@ import StyleContext from "@/contexts/StyleContext";
 import Image from "next/image";
 
 export default function EducationCard({ school }) {
-  const imgRef = createRef();
+  const imgRef = createRef<HTMLImageElement>();
 
   const GetDescBullets = ({ descBullets }) => {
     return descBullets

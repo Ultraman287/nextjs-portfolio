@@ -97,11 +97,7 @@ export default function SoftwareSkill() {
         {groupedSkills.map((group, index) => (
           <ul key={index} className="dev-icons">
             {group.map((skills, i) => (
-              <li
-                key={i}
-                className="software-skill-inline"
-                name={skills.skillName}
-              >
+              <li key={i} className="software-skill-inline">
                 <FontAwesomeIcon icon={iconMapping[skills.skillName]} />
                 <p>{skills.skillName}</p>
               </li>

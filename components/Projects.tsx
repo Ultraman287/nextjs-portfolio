@@ -24,7 +24,7 @@ export default function Projects() {
           {projects.map((project) => (
             <a
               href={project.link}
-              key={project.image}
+              key={project.title}
               className="sm:w-1/2 w-100 p-4"
             >
               <div className="flex relative h-72 w-full">

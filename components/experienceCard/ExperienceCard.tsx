@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function ExperienceCard({ cardInfo, isDark }) {
   const [colorArrays, setColorArrays] = useState([]);
-  const imgRef = createRef();
+  const imgRef = createRef<HTMLImageElement>();
 
   function getColorArrays() {
     const colorThief = new ColorThief();
