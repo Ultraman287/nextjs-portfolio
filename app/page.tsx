@@ -3,7 +3,6 @@
 import * as React from "react";
 import { useEffect, useState } from "react";
 import Link from "next/link";
-
 import { cn } from "@/lib/utils";
 import Navbar from "@/components/Navbar";
 import About from "@/components/About";
@@ -13,16 +12,20 @@ import Contact from "@/components/Contact";
 import EducationCard from "@/components/educationCard/EducationCard";
 import WorkExperience from "@/components/experienceCard/WorkExperience";
 import "@fortawesome/fontawesome-svg-core/styles.css";
-
 import { schools } from "@/data/education";
-
 import { StyleProvider } from "@/contexts/StyleContext";
 import { useLocalStorage } from "@/hooks/useLocalStorage";
 import icon from "@/public/favicon-32x32.png";
 
 const App = () => {
-  const darkPref = window.matchMedia("(prefers-color-scheme: light)");
-  const [isDark, setIsDark] = useLocalStorage("isDark", darkPref.matches);
+  const [isDark, setIsDark] = useLocalStorage("isDark", false);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const darkPref = window.matchMedia("(prefers-color-scheme: light)");
+      setIsDark(darkPref.matches);
+    }
+  }, []);
 
   const changeTheme = () => {
     setIsDark(!isDark);
