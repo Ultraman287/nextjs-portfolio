@@ -29,7 +29,7 @@ const App = () => {
   };
 
   return (
-    <div className={isDark ? "dark-mode" : null}>
+    <div className={isDark ? "dark-mode" : undefined}>
       <link rel="icon" href="../public/favicon-32x32.png" sizes="any" />
       <StyleProvider value={{ isDark: isDark, changeTheme: changeTheme }}>
         <main className="text-gray-400 bg-gray-900 body-font">
