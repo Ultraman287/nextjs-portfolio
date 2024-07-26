@@ -17,7 +17,6 @@ import {
   faAws,
   faMicrosoft,
   faRust,
-  faCsharp,
   faGolang,
 } from "@fortawesome/free-brands-svg-icons";
 import {
@@ -65,7 +64,7 @@ const iconMapping = {
   "Node.js": faNode,
   R: faChartLine,
   Rust: faRust,
-  "C#": faCsharp,
+  "C#": faBrain,
   Go: faGolang,
   SvelteKit: faJs,
   Railway: faTrain,
