@@ -1,5 +1,5 @@
 import generalized_chess from "@/assets/images/Tutorial_play_game.gif";
-import bubblify from "@/assets/images/bubblify.png";
+import bubblify from "@/assets/images/Bubblify.png";
 import remote_mouse_rust from "@/assets/images/Rocket-rs.png";
 
 export const projects = [
