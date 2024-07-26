@@ -1,5 +1,6 @@
 import Image from "next/image";
-import portrait from "@/assets/images/Portrait.jpg";
+import portrait from "@/assets/images/Portrait.png";
+import SocialMediaComponent from "./SocialMedia/SocialMedia"; // Adjust the path as necessary
 
 export default function About() {
   return (
@@ -41,8 +42,10 @@ export default function About() {
             >
               See My Past Work
             </a>
+            <SocialMediaComponent />
           </div>
         </div>
+
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
           <Image
             className="object-cover object-center rounded"

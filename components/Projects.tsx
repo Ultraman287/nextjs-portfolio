@@ -1,7 +1,7 @@
 // @ts-ignore
 import { CodeIcon } from "@heroicons/react/solid";
 import React from "react";
-import { projects } from "@/data";
+import { projects } from "@/data/projects";
 import Image from "next/image";
 
 export default function Projects() {
@@ -14,9 +14,10 @@ export default function Projects() {
             Apps I&apos;ve Built
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
-            facilis repellat ab cupiditate alias vero aliquid obcaecati quisquam
-            fuga dolore.
+            Here are some of the projects I&apos;ve worked on, showcasing a
+            variety of technologies and solutions I&apos;ve developed. These
+            projects highlight my skills in web development, machine learning,
+            and software engineering.
           </p>
         </div>
         <div className="flex flex-wrap -m-4">
@@ -26,13 +27,13 @@ export default function Projects() {
               key={project.image}
               className="sm:w-1/2 w-100 p-4"
             >
-              <div className="flex relative">
+              <div className="flex relative h-72 w-full">
                 <Image
                   alt="gallery"
                   className="absolute inset-0 w-full h-full object-cover object-center"
                   src={project.image}
-                  width={500}
-                  height={500}
+                  layout="fill"
+                  objectFit="contain"
                 />
                 <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
                   <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">

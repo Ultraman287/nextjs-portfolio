@@ -1,0 +1,80 @@
+.experience-cards-div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 1rem 1rem;
+}
+
+.experience-heading {
+  font-size: 56px;
+  font-weight: 400;
+}
+
+.experience-container {
+  display: flex;
+  width: 75%;
+  padding: 20px 10px;
+  margin: 0px auto;
+  margin-top: 2rem;
+}
+
+.experience-container > * {
+  flex: 1;
+}
+
+/* Media Query */
+
+@media (max-width: 1380px) {
+  .experience-heading {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .experience-heading {
+    font-size: 30px;
+    text-align: center;
+  }
+}
+
+
+.title-button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.toggle-button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-button:hover {
+  background-color: #357ab7;
+}
+
+.toggle-button:focus {
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .toggle-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .title-button-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .toggle-button {
+    margin-top: 10px;
+  }
+}
