@@ -18,6 +18,7 @@ import { schools } from "@/data/education";
 
 import { StyleProvider } from "@/contexts/StyleContext";
 import { useLocalStorage } from "@/hooks/useLocalStorage";
+import icon from "@/public/favicon-32x32.png";
 
 const App = () => {
   const darkPref = window.matchMedia("(prefers-color-scheme: light)");
@@ -29,6 +30,7 @@ const App = () => {
 
   return (
     <div className={isDark ? "dark-mode" : null}>
+      <link rel="icon" href="../public/favicon-32x32.png" sizes="any" />
       <StyleProvider value={{ isDark: isDark, changeTheme: changeTheme }}>
         <main className="text-gray-400 bg-gray-900 body-font">
           <Navbar />

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import portrait from "@/assets/images/Portrait.png";
-import SocialMediaComponent from "./SocialMedia/SocialMedia"; // Adjust the path as necessary
+import SocialMediaComponent from "./socialMedia/SocialMedia"; // Adjust the path as necessary
 
 export default function About() {
   return (
