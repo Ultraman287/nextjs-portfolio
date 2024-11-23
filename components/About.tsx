@@ -9,25 +9,19 @@ export default function About() {
         <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
           <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
             Hi, I&apos;m Saad.
-            <br className="hidden lg:inline-block" />I love to build amazing
-            apps and solve complex problems.
+            <br className="hidden lg:inline-block" />I love building innovative apps and solving complex problems.
           </h1>
           <p className="mb-8 leading-relaxed">
-            I am the co-founder and Technical lead for Discearn, a startup that
-            leverages AI to enhance online learning and education. Discearn is a
-            result of my collaboration with the Masason Foundation and Minerva
-            University, where I conducted AI research and developed a web
-            extension that allows summarization, chatbot communication, and quiz
-            generation across the internet.
+            I am currently a software engineer at <strong>Climate Donor</strong>, where I’m building a crowdfund platform to empower climate change initiatives. My work includes optimizing costs, improving application performance, and leading the development of features such as corporate donation integrations and dynamic user dashboards. 
             <br />
             <br />
-            As a computer science student at Minerva, I have gained diverse and
-            global experiences in software engineering and data analysis working
-            with innovative companies and organizations in San Francisco, Seoul,
-            Tokyo, and Buenos Aires. I am passionate about solving complex
-            problems, creating social impact, and exploring new musical
-            instruments. I also enjoy teaching and mentoring others, having been
-            a teaching assistant in the past.
+            Additionally, I am a junior engineer at <strong>Solar B.I.</strong>, contributing to their proprietary data collection platform. My responsibilities include query optimization, bug fixing through <strong>Apache Airflow</strong>, and web development using <strong>Django</strong>, hosted on an <strong>AWS EC2</strong> server.
+            <br />
+            <br />
+            Previously, I co-founded <strong>Discearn</strong>, a startup leveraging AI to enhance online learning and education. Discearn originated from my collaboration with the Masason Foundation and Minerva University, where I conducted AI research and developed a web extension for summarization, chatbot communication, and quiz generation. 
+            <br />
+            <br />
+            My global experiences span software engineering and data analysis in San Francisco, Seoul, Tokyo, and Buenos Aires. I am passionate about solving complex challenges, creating social impact, and exploring new musical instruments. I also enjoy teaching and mentoring others, having been a teaching assistant and a mentor for multiple teams in the past.
           </p>
           <div className="flex justify-center">
             <a

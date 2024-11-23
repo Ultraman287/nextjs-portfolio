@@ -7,6 +7,7 @@ import zayedUniversity from "@/assets/icons/zayedLogo.png";
 import sandbox from "@/assets/icons/sandboxLogo.png";
 import masason from "@/assets/icons/masasonLogo.png";
 import minerva from "@/assets/icons/MinervaLogo1.png";
+import solarBI from "@/assets/icons/solarBILogo.png";
 
 export const experiences = [
   {
@@ -14,24 +15,35 @@ export const experiences = [
     company: "YouCademy",
     companylogo: youcademy,
     date: "May 2024 – Present",
-    descBullets: [
-      "Led the technical development of YouCademy, an innovative ed-tech startup focused on hyper-personalized lesson materials and real-time insights for teachers.",
+    descBullets: [,
       "Configured project infrastructure on Google Cloud Platform (GCP), utilizing Google Cloud Build and Cloud Run to containerize software for efficient deployment.",
       "Developed and integrated end-to-end features, including a flashcard system with a React frontend and a Django backend, leveraging an open spaced repetition algorithm.",
       "Implemented a notion-like writing editor using Blocknote.js, integrating the Blocknote-comments library for inline AI-generated comments on students' writing.",
     ],
   },
   {
-    role: "Engineering Manager",
+    role: "Software Engineer",
     company: "Climate Donor Inc.",
     companylogo: climateDonor,
-    date: "May 2024 – Present",
+    date: "Sep 2024 – Present",
     descBullets: [
-      "Led a team of 6 volunteers in enhancing the Climate Donor website, a platform enabling technology providers to showcase climate change mitigation projects and attract individual and corporate donors.",
-      "Collaborated with the Project Manager to define technical milestones, delegate tasks to developers and designers, and ensure adherence to project timelines.",
-      "Established the technical environment, including Vercel deployment, Firebase integration, and Stripe payment gateway, while ensuring proper documentation and knowledge transfer.",
-      "Conducted regular technical reviews, addressing issues such as tech debt, and facilitated feedback sessions with the client and team mentor to align the product roadmap with organizational goals.",
-      "Implemented key features, including Project Owner and Donor Page enhancements, a new Corporate Partner Page, and Admin Dashboard improvements, leveraging technologies like React, Node.js, and MongoDB.",
+      "Developed a crowdfund platform enabling technology providers to showcase climate change mitigation projects and attract individual and corporate donors.",
+      "Reduced Firestore costs to the free tier by fixing React useEffect dependency errors affecting read operations throughout the codebase.",
+      "Migrated the codebase from Next.js v10.2 to v14.2, improving compilation speed by 80% and enhancing modularity with Material UI integration.",
+      "Implemented key features such as contextual login, real-time project updates, dynamic receipt generation via Stripe, and an admin dashboard with fuzzy search and detailed user modals.",
+      "Optimized developer experience through documentation, modularized code structure, and process improvements.",
+    ],
+  },
+  {
+    role: "Junior Engineer",
+    company: "Solar B.I.",
+    companylogo: solarBI,
+    date: "Oct 2024 – Present",
+    descBullets: [
+      "Maintained and enhanced Solar B.I.'s proprietary data collection platform, focusing on query optimization and web development hosted on an Amazon EC2 server.",
+      "Resolved a major bug in a monthly report system by identifying poorly optimized SQL queries and reducing execution time by 90%.",
+      "Streamlined Solcast API usage, reducing unnecessary calls and improving system efficiency through systematic logging and database updates.",
+      "Updated and maintained Apache Airflow DAGs for daily and monthly data collection tasks.",
     ],
   },
   {
@@ -40,19 +52,20 @@ export const experiences = [
     companylogo: centroCommunity,
     date: "Oct 2023 – Feb 2024",
     descBullets: [
-      "Implemented key features in the CentroAI web application, including AI chatbot integration using Azure OpenAI service and Langchain, and user authentication via Google OAuth with PassportJS.",
+      "Built an AI chatbot using Azure OpenAI and Langchain for real-time user interactions, integrating with Pinecone for efficient data storage and retrieval.",
+      "Implemented Google OAuth-based user authentication for over 500 monthly active users, incorporating role-based access for different user types.",
     ],
   },
   {
     role: "Cofounder, Technical Lead",
     company: "Discearn",
     companylogo: discearn,
-    date: "Jun 2023 – Present",
+    date: "Jun 2023 – Apr 2024",
     descBullets: [
-      "Directed a 9-member team in AI-focused technical development at Discearn during a startup accelerator program in Tokyo in partnership with DEEPCORE and Masason Foundation.",
-      "Conducted 20 in-depth user interviews to fine-tune App features, UI, and UX.",
-      "Published a web extension that allows summarization, communication with a chatbot, and quiz generation with automated feedback across the internet using the Plasmo framework, Langchain, and PineconeDB.",
-      "Collaborating with Minerva University to create a custom version of our extension for over 600 students.",
+      "Directed a 9-member team in AI-focused technical development, creating an active learning tool during a Tokyo-based startup accelerator program.",
+      "Published a web extension enabling summarization, chatbot communication, and quiz generation using the Plasmo framework, Langchain, and PineconeDB.",
+      "Secured partnerships with two organizations, gaining over 600 users by incorporating user feedback into iterative development.",
+      "Trained team members in Python, React, and RAG architecture, resulting in the delivery of five functional prototypes.",
     ],
   },
   {
@@ -61,8 +74,8 @@ export const experiences = [
     companylogo: masason,
     date: "Sep 2022 – May 2023",
     descBullets: [
-      "Used NLP topic classification to categorize user-generated answers based on grading rubrics to automate grading.",
-      "Developed a Telegram bot using Python with OpenAI's Davinci model API to enhance user engagement through interactive multiple-choice quizzes and explanations.",
+      "Utilized NLP topic classification to automate grading by categorizing user-generated answers based on grading rubrics.",
+      "Developed a Telegram bot using Python and OpenAI's Davinci model API for interactive quizzes and detailed explanations.",
     ],
   },
   {
@@ -71,8 +84,8 @@ export const experiences = [
     companylogo: asemco,
     date: "Sep 2022 – Dec 2022",
     descBullets: [
-      "Created a React Native application based on Figma mockups with a Python backend for therapy sessions to help the education and comprehensive assistance of people with Autism Spectrum Disorders.",
-      "Organized and conducted technical training sessions for five therapists to integrate existing ABA applications, reducing time required to collect data by 30%.",
+      "Developed a React Native application with a Python backend for therapy sessions, aiding individuals with Autism Spectrum Disorders.",
+      "Reduced data collection time by 30% by integrating existing ABA applications and conducting technical training for therapists.",
     ],
   },
   {
@@ -90,29 +103,18 @@ export const experiences = [
     companylogo: sandbox,
     date: "Sep 2021 – Dec 2021",
     descBullets: [
-      "Being a part of the Research and Development team at Sandbox, I was Team Lead for the video analysis group.",
-      "Created a program that used Google's Youtube Data API to parse through comments for any given video and extracted the timestamps from the comments, identifying traction points in the video.",
-      "Developed a tool to automatically create GIFs from high-traction video portions using moviepy.",
-      "Investigated machine learning algorithms for Youtube thumbnails to identify key areas for generating more impressions.",
-    ],
-  },
-  {
-    role: "AI Lab Intern",
-    company: "Masason Foundation",
-    companylogo: masason,
-    date: "Sep 2022 – Present",
-    descBullets: [
-      "Researching and developing an automated grading system with formative feedback using prompt engineering with the BLOOM large language model.",
+      "Developed an automated GIF creation tool for YouTube videos using Google’s YouTube Data API and moviepy.",
+      "Analyzed over 10,000 comments to generate a user interest heatmap, identifying key video traction points.",
     ],
   },
   {
     role: "Math Curricular Design Intern",
     company: "Minerva University",
     companylogo: minerva,
-    date: "May 2022 – Jul 2022 ",
+    date: "May 2022 – Jul 2022",
     descBullets: [
-      "Worked with Minerva’s Math department to revamp the Linear Algebra and Single & Multivariable Calculus courses.",
-      "Implemented and helped update an autocheck library with python to make notebooks where students could confirm their answers in a code workbook and get contextually correct hints for different types of mistakes.",
+      "Revamped Linear Algebra and Single/Multivariable Calculus courses by developing autocheck libraries for student work validation.",
+      "Enhanced learning materials with contextually accurate hints for common mistakes in student responses.",
     ],
   },
 ];

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter as FontSans } from "next/font/google";
+import { Inter as FontSans, Mulish } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import Head from "next/head";
@@ -7,6 +7,11 @@ import Head from "next/head";
 const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
+});
+
+const fontMulish = Mulish({
+  subsets: ["latin"],
+  variable: "--font-mulish",
 });
 
 export const metadata: Metadata = {
@@ -36,7 +41,7 @@ export default function RootLayout({
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
-          fontSans.variable
+          fontMulish.variable,
         )}
       >
         {children}

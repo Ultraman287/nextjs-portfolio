@@ -35,7 +35,7 @@ const App = () => {
     <div className={isDark ? "dark-mode" : undefined}>
       <link rel="icon" href="../public/favicon-32x32.png" sizes="any" />
       <StyleProvider value={{ isDark: isDark, changeTheme: changeTheme }}>
-        <main className="text-gray-400 bg-gray-900 body-font">
+        <main className="text-gray-400 bg-gray-900 body-font mulish">
           <Navbar />
           <About />
           <EducationCard school={schools[0]} />

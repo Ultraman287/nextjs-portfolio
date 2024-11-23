@@ -1,4 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-  
+
+.mulish {
+    font-family: var(--font-mulish);
+}
